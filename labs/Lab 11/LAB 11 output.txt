@@ -1,0 +1,18 @@
+
+
+OUTPUT:
+
+Following is a Topological Sort of the given graph
+0 5 1 4 2 3 Press any key to continue . . .
+
+
+
+Applications:
+
+Topological Sort is used where order is important...i.e You want to perform some task in order then take task as nodes and use
+Topological sort for it.
+
+
+->Washing Cloths
+->Wearing Cloths
+

@@ -1,0 +1,94 @@
+#ifndef MYSTACK_H
+#define MYSTACK_H
+
+#include <iostream>
+
+using namespace std;
+
+// Stack class
+template <class T>
+class Stack {
+	Node<T>* top;
+public:
+	Stack() { top = NULL; };
+	void Print();
+	void Push(T data);
+	T Pop();
+	
+	bool IsEmpty() { return (top == NULL) ? true : false; };
+	Node<T>* Top() { return top; };
+};
+
+/**
+* Print the contents of the stack
+*/
+template <class T>
+void Stack<T>::Print() {
+
+	// Temp pointer
+	Node<T>* tmp = top;
+
+	// No nodes
+	if ( tmp == NULL ) {
+		cout << "EMPTY" << endl;
+		return;
+	}
+
+	// One node in the list
+	if ( tmp->Next() == NULL ) {
+		cout << tmp->Data();
+		cout << " --> ";
+		cout << "NULL" << endl;
+	}
+	else {
+		// Parse and print the list
+		do {
+			cout << tmp->Data();
+			cout << " --> ";
+			tmp = tmp->Next();
+		}
+		while ( tmp != NULL );
+
+		cout << "NULL" << endl;
+	}
+}
+
+/**
+* Push a node to the stack
+*/
+template <class T>
+void Stack<T>::Push(T data) {
+
+	// Create a new node
+	Node<T>* newNode = new Node<T>();
+	newNode->SetData(data);
+	newNode->SetNext(NULL);
+	
+	if (top != NULL)
+	newNode->SetNext(top);
+
+	top = newNode;
+}
+
+/**
+* Pop a node from the stack
+*/
+template <class T>
+T Stack<T>::Pop() {
+
+	// Create a temp pointer
+	Node<T> *tmp = top;
+
+	// No nodes
+	if ( tmp == NULL )
+	return -1;
+
+	top = top->Next();
+	
+	T x = tmp->Data();
+	delete tmp;
+	
+	return x;
+}
+
+#endif

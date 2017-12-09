@@ -1,0 +1,12 @@
+100inputs
+bubble sort,0msec
+selection sort,0msec
+insertion sort,0msec
+1000inputs
+bubble sort,78msec
+selection sort,47msec
+insertion sort,46msec
+10000inputs
+bubble sort,7431msec
+selection sort,4453msec
+insertion sort,4438msec

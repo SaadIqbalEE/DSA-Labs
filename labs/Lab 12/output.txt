@@ -1,0 +1,6 @@
+
+We converted acyclic graph into MST tree.This appliction is usefull to find optimal algorithm to visit all nodes.
+
+APP:
+	Help to obtain optimal solution for cable operator to lay down cable in cities.
+	Help to obtain optimal Home wiring.  

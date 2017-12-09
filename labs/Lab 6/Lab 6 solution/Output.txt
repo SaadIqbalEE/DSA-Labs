@@ -1,0 +1,43 @@
+
+Name:Saad Iqbal
+Student # 32903
+Date: 29/10/2015
+
+PROBLEM:
+Tower of Hanoi using Stacks
+EXECUTE the program without making any changes
+
+
+Introduction:
+In this lab,we are supposed to make a function of Tower of Hanoi using Stacks.Function is basically concern to make it calling itself as required.
+The least number of moves is (2^n-1) where n is the number of disks.
+
+
+runtime output:
+
+        Enter the number of disks: 3
+
+        Towers:
+                Tower 1:        008CFA64
+                Tower 2:        008CFA58
+                Tower 3:        008CFA4C
+
+        Moving Disk #   1       (008CFA64 -> 008CFA58)
+        Moving Disk #   2       (008CFA64 -> 008CFA4C)
+        Moving Disk #   1       (008CFA58 -> 008CFA4C)
+        Moving Disk #   3       (008CFA64 -> 008CFA58)
+        Moving Disk #   1       (008CFA4C -> 008CFA64)
+        Moving Disk #   2       (008CFA4C -> 008CFA58)
+        Moving Disk #   1       (008CFA64 -> 008CFA58)
+
+
+        Number of moves:        7
+
+Compile window output:
+
+'Project1.exe' (Win32): Loaded 'C:\Users\siqbal.bee14seecs\Documents\Visual Studio 2013\Projects\Project1\Debug\Project1.exe'. Symbols loaded.
+'Project1.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ntdll.dll'. Cannot find or open the PDB file.
+'Project1.exe' (Win32): Loaded 'C:\Windows\SysWOW64\kernel32.dll'. Cannot find or open the PDB file.
+'Project1.exe' (Win32): Loaded 'C:\Windows\SysWOW64\KernelBase.dll'. Cannot find or open the PDB file.
+'Project1.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcp120d.dll'. Cannot find or open the PDB file.
+'Project1.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcr120d.dll'. Cannot find or open the PDB file.

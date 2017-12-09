@@ -1,0 +1,12 @@
+100acscending inputs
+Radix_Sort,0msec
+Merge sort,0msec
+1000acscending inputs
+Radix_Sort,15msec
+Merge sort,31msec
+10000acscending inputs
+Radix_Sort,125msec
+Merge sort,2000msec
+100000acscending inputs
+Radix_Sort,2562msec
+Merge sort,19049msec
